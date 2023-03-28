@@ -6,9 +6,10 @@
  * @Written: 3/26/2023
  */
 public class everyOther {
-    private static String everyOther(String str) {
+    public String everyOther(String str) {
         String X = "";
         if(str.length() < 2){
+            System.out.println(str);
             return str;
         }else{
             for(int i = 0; i <= str.length(); i += 2){
@@ -16,13 +17,17 @@ public class everyOther {
                                     // every time it runs then puts the character
                                     // in String X.
             }
+            System.out.println(X);
             return X;
+
         }
     }
 
     public static void main(String args[]) {
+        everyOther everyOtherObject = new everyOther();
         String str = "hello";
-        System.out.println(everyOther(str));
+        everyOtherObject.everyOther(str);
+
     }
 
 

@@ -6,7 +6,7 @@
  * @Written: 3/26/2023
  */
 public class fibonacci {
-    private static int fibonacci(int n) {
+    public int fibonacci(int n) {
         int m = n,  firstTerm = 0, secondTerm = 1;
 
         for (int i = 1; i <= n; ++i) { //counts from 1 and everytime it runs
@@ -19,14 +19,17 @@ public class fibonacci {
                                   // into the second term and the previous second term is
                                   // placed into the first term, and the first term is displayed
         }
+        System.out.println(firstTerm);
         return firstTerm;
 
 
     }
 
     public static void main(String args[]) {
+        fibonacci fibonacciObject = new fibonacci();
         int integer = 9;
-        System.out.println(fibonacci(integer));
+        fibonacciObject.fibonacci(integer);
+
 
     }
 

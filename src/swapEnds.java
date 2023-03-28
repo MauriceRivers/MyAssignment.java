@@ -6,10 +6,15 @@
  * @Written: 3/26/2023
  */
 public class swapEnds {
-    private static String swapEnds(String str) {
+    public String swapEnds(String str) {
         if(str.length() < 2){
+           System.out.println(str);
             return str; //displays given string if length is less than 2
         }else{
+            System.out.println(str.substring(str.length() - 1) +
+                    str.substring(1, str.length() - 1) + str.substring(0, 1));
+
+
             return (str.substring(str.length() - 1) +
                     str.substring(1, str.length() - 1) + str.substring(0, 1));
             //takes the String provided and takes last character and places it at
@@ -19,7 +24,9 @@ public class swapEnds {
     }
 
     public static void main(String args[]) {
+        swapEnds swapEndsObject = new swapEnds();
         String str = "hello";
-        System.out.println(swapEnds(str));
+        swapEndsObject.swapEnds(str);
+
     }
 }

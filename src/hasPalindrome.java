@@ -6,21 +6,24 @@
  * @Written: 3/26/2023
  */
 public class hasPalindrome {
-    private static boolean hasPalindrome(String str) {
+    public boolean hasPalindrome(String str) {
             int n = str.length();
             for (int i = 0; i < n / 2; i++)
                 if (str.charAt(i) != str.charAt(n - i - 1)){
-                    return false;}
+                    System.out.println(false);return false;}
+            System.out.println(true);
             return true;
         }
 
     public static void main(String args[]) {
+        hasPalindrome hasPalindromeObject = new hasPalindrome();
         String str = "appa";
         String str2 = "hannah hannah";
         String str3 = "poll";
-        System.out.println(hasPalindrome(str));
-        System.out.println(hasPalindrome(str2));
-        System.out.println(hasPalindrome(str3));
+        hasPalindromeObject.hasPalindrome(str);
+        hasPalindromeObject.hasPalindrome(str2);
+        hasPalindromeObject.hasPalindrome(str3);
+
     }
 
 }

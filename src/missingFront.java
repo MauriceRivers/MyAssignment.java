@@ -7,15 +7,16 @@
  */
 
 public class missingFront {
-    private static String missingFront(String str){
+    public String missingFront(String str){
+        System.out.println(str.substring(3));
         return str.substring(3);
         //.substring(3) removes first 3 character in String str
     }
 
     public static void main(String args[]) {
+        missingFront missingFrontObject = new missingFront();
         String str = "Holiday";
-
-        System.out.println(missingFront(str));
+        missingFrontObject.missingFront(str);
 
     }
 

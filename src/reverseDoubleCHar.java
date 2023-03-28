@@ -6,7 +6,7 @@
  * @Written: 3/26/2023
  */
 public class reverseDoubleCHar {
-    private static String reverseDoubleCHar(String word) {
+    public String reverseDoubleCHar(String word) {
         String result = "";
         for (int i = word.length() - 1; i >= 0; i--) { //goes from last character
                                                        // to first
@@ -16,11 +16,14 @@ public class reverseDoubleCHar {
             //the String word
 
         }
+        System.out.println(result);
         return result;
     }
 
     public static void main(String args[]) {
+       reverseDoubleCHar reverseDoubleCHarObject = new reverseDoubleCHar();
         String str = "The";
-        System.out.println(reverseDoubleCHar(str));
+        reverseDoubleCHarObject.reverseDoubleCHar(str);
+
     }
 }

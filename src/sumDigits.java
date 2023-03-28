@@ -6,7 +6,7 @@
  * @Written: 3/26/2023
  */
 public class sumDigits {
-    private static int sumDigits(int n) {
+    public int sumDigits(int n) {
         int sum = 0;
         while (n != 0){
             sum = sum + n % 10;
@@ -18,12 +18,15 @@ public class sumDigits {
             // outside the loop, then n is divided by 10, and since it is an integer
             // it rounds to the whole number, and keeps doing the loop until it
             //equals 0 then it returns the integer sum that has stored the values
-        } return sum;
+        } System.out.println(sum);
+        return sum;
     }
 
     public static void main(String args[]) {
+        sumDigits sumDigitsObject = new sumDigits();
         int integer = 13;
-        System.out.println(sumDigits(integer));
+        sumDigitsObject.sumDigits(integer);
+
     }
 
 

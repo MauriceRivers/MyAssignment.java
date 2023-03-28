@@ -6,10 +6,12 @@
  * @Written: 3/26/2023
  */
 public class birthdayName {
-    private  static String birthdayName(String name){
+    public String birthdayName(String name){
 
-        return "Happy Birthday " + name + "!"; // displays  Happy Birthday string
-                                               // with name added to it
+        System.out.println("Happy Birthday " + name + "!");
+        return "Happy birthday " + name + "!";
+        // displays  Happy Birthday string
+        // with name added to it
     }
 
 
@@ -17,8 +19,8 @@ public class birthdayName {
     public static void
     main(String args[])
     {
+    birthdayName birthdayNameObject = new birthdayName();
         String str = "Juan";
-
-       System.out.println(birthdayName(str));
+        birthdayNameObject.birthdayName(str);
     }
 }
